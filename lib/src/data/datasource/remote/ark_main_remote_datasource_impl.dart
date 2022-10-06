@@ -1,0 +1,34 @@
+import 'dart:convert';
+import 'dart:developer';
+
+import 'package:ark_module_setup/src/core/core/exception.dart';
+import 'package:ark_module_setup/src/data/datasource/remote/ark_main_remote_datasource.dart';
+import 'package:ark_module_setup/src/data/dto/remote_config_dto.dart';
+import 'package:ark_module_setup/utils/app_url.dart';
+import 'package:dio/dio.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+class ArkMainRemoteDataSourceImpl implements ArkMainRemoteDataSource {
+  late Dio dio;
+  ArkMainRemoteDataSourceImpl({Dio? dio}) {
+    this.dio = dio ?? Dio();
+  }
+  @override
+  Future<RemoteConfigDTO> getRemoteConfig() async {
+    final prefs = await SharedPreferences.getInstance();
+    final response = await dio.get(remoteConfigUrl);
+
+    log("RESPONSE GET REMOTE CONFIG : ${response.data}");
+    int code = response.statusCode ?? 500;
+    if (code >= 500) {
+      throw CustomException(code, 'Error... failed connect to server');
+    } else if (code != 200) {
+      throw CustomException(
+          code, response.data['message'] ?? 'Failed... Please try again');
+    } else {
+      final data = json.encode(response.data);
+      await prefs.setString("remote_config", data);
+      return RemoteConfigDTO.fromJson(response.data);
+    }
+  }
+}
