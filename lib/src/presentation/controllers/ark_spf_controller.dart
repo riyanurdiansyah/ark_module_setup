@@ -12,6 +12,9 @@ class ArkSpfController extends GetxController {
   final Rx<bool> _isPrakerja = false.obs;
   Rx<bool> get isPrakerja => _isPrakerja;
 
+  final Rx<bool> _isShowDialogIg = false.obs;
+  Rx<bool> get isShowDialogIg => _isShowDialogIg;
+
   @override
   void onInit() async {
     prefs = await SharedPreferences.getInstance();
@@ -23,5 +26,19 @@ class ArkSpfController extends GetxController {
     log('SpfC : Get Login Info');
     _isLogin.value = prefs.getBool('user_login') ?? false;
     _isPrakerja.value = prefs.getBool('user_prakerja') ?? false;
+  }
+
+  Future<void> getDialogFlag() async {
+    _isShowDialogIg.value = prefs.getBool('show_dialog_ig') ?? true;
+  }
+
+  Future<void> saveSessionTour(
+    String name,
+  ) async {
+    await prefs.setBool(name, true);
+  }
+
+  Future<void> saveLocalCache(String name, data) async {
+    await prefs.setString(name, data);
   }
 }

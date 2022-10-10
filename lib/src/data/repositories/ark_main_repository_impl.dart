@@ -1,8 +1,5 @@
-import 'package:ark_module_setup/src/core/core/exception.dart';
-import 'package:ark_module_setup/src/data/datasource/remote/ark_main_remote_datasource.dart';
+import 'package:ark_module_setup/ark_module_setup.dart';
 import 'package:ark_module_setup/src/domain/entities/remote_config_entity.dart';
-import 'package:ark_module_setup/src/core/core/failures.dart';
-import 'package:ark_module_setup/src/domain/repositories/ark_main_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class ArkMainRepositoryImpl implements ArkMainRepository {

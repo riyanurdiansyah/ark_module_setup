@@ -17,6 +17,14 @@ abstract class AppRouteName {
 
   static const signup = "/signup";
 
+  static const editProfile = "/edit-profile";
+
+  static const showSertif = "/show-sertif";
+
+  static const certificate = "/certificate";
+
+  static const changeFaceRecog = "/change-face-recog";
+
   static const main = "/main";
 
   static const wishlist = "/wishlist";

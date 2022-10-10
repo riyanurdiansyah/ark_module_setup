@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/src/core/core/failures.dart';
+import 'package:ark_module_setup/ark_module_setup.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class ExceptionHandle {
