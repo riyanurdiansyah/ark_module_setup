@@ -1,4 +1,6 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:dartz/dartz.dart';
+import 'package:dio/dio.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class ExceptionHandle {
@@ -8,6 +10,38 @@ class ExceptionHandle {
     } else {
       Fluttertoast.showToast(
           msg: "Failed connect to server \n Please check your connection");
+    }
+  }
+}
+
+class ExceptionHandleResponse {
+  static execute(Object e) {
+    if (e is CustomException) {
+      return Left(HttpFailure(e.code, e.message));
+    } else {
+      return const Left(
+        HttpFailure(
+          500,
+          'Error... failed connect to server \nPlease check your connection',
+        ),
+      );
+    }
+  }
+}
+
+class ExceptionHandleResponseAPI {
+  static execute(int code, Response<dynamic> response, String? errorException,
+      String? errorMsg) {
+    if (code >= 500) {
+      throw CustomException(code,
+          errorException ?? 'Error exception... failed connect to server');
+    } else if (code != 200) {
+      throw CustomException(
+        code,
+        response.data['message'] ??
+            errorMsg ??
+            'Failed connect... Please try again',
+      );
     }
   }
 }
