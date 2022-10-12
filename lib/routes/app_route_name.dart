@@ -31,7 +31,7 @@ abstract class AppRouteName {
 
   static const notification = "/notification";
 
-  static const category = "/category";
+  static const category = "/ark-category";
 
   static const search = "/search";
 

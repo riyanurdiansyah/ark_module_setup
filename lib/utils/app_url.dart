@@ -20,6 +20,9 @@ const String remoteConfigUrl =
 
 const String profileUrl = "$apiMemberUrl/api/v1/profile?tab=profile";
 
+const String categoryUrl =
+    "https://apicourse2.arkademi.com/api/v1/course/newcategories";
+
 const String myCourseUrl =
     "$apiMemberUrl/api/v1/profile?tab=courses&per_page=100";
 
@@ -38,3 +41,9 @@ const String cityUrl =
 
 const String linkedinUrl =
     "https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAM";
+
+const String courseUrl =
+    "$apiMemberUrl/api/v1/profile?tab=courses&per_page=100";
+
+const String listCertificateUrl =
+    "$apiMemberUrl/api/arkademi/get_user_certificate";
