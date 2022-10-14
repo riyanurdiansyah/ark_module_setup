@@ -9,3 +9,9 @@ String parseHtmlString(String htmlString) {
 
   return parsedString;
 }
+
+final currencyFormatter = NumberFormat.currency(
+  locale: "id_ID",
+  symbol: "Rp ",
+  decimalDigits: 0,
+);

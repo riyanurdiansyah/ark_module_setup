@@ -35,3 +35,27 @@ List<String> listPendidikan = [
   "S1",
   "S2",
 ];
+
+const List<Map<String, String>> cardBase = [
+  {
+    'title': 'Mengelola Utang untuk Mengendalikan Bisnis',
+    'subtitle': 'cardbase_bisnis',
+    'image': 'assets/images/cardbase_bisnis.png',
+    'image_long': 'assets/images/cardbase_bisnis_long.png',
+    'link': 'https://learnlab.typeform.com/to/DgIinGXb',
+  },
+  {
+    'title': 'Memahami Risiko Keselamatan dan Kesehatan Kerja di Perkantoran',
+    'subtitle': 'cardbase_k3',
+    'image': 'assets/images/cardbase_k3.png',
+    'image_long': 'assets/images/cardbase_k3_long.png',
+    'link': 'https://learnlab.typeform.com/to/PYSSJpD3',
+  },
+  {
+    'title': 'Mengenal AutoCAD untuk Pemula',
+    'subtitle': 'cardbase_autocad',
+    'image': 'assets/images/cardbase_autocad.png',
+    'image_long': 'assets/images/cardbase_autocad_long.png',
+    'link': 'https://learnlab.typeform.com/to/FyW1A3Rl',
+  },
+];

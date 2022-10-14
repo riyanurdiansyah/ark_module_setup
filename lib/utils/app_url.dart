@@ -4,8 +4,6 @@ const String prakerjaUrl = "https://prakerja.arkademi.com";
 
 const String apiCourseUrl = 'https://api-course.arkademi.com';
 
-const String blogUrl = 'https://arkademi.com/blog';
-
 const String apiMemberUrl = 'https://api-member.arkademi.com';
 
 const String apiGatewayUrl = 'https://api-gateway.arkademi.com';
@@ -20,8 +18,10 @@ const String remoteConfigUrl =
 
 const String profileUrl = "$apiMemberUrl/api/v1/profile?tab=profile";
 
-const String categoryUrl =
-    "https://apicourse2.arkademi.com/api/v1/course/newcategories";
+const String categoryUrl = "$apiCourseUrl/api/v1/course/newcategories";
+
+const String imageSliderUrl =
+    "$apiCourseUrl/api/v1/homepage/home_sliders_mobile";
 
 const String myCourseUrl =
     "$apiMemberUrl/api/v1/profile?tab=courses&per_page=100";
@@ -47,3 +47,28 @@ const String courseUrl =
 
 const String listCertificateUrl =
     "$apiMemberUrl/api/arkademi/get_user_certificate";
+
+const String listCourseJRC =
+    "$apiCourseUrl/api/v1/course/category/2778/courses";
+
+const String listIdTrendingCourseUrl =
+    "$apiCourseUrl/api/v1/homepage/course_best_sellers_id";
+
+const String listIdNewestCourseUrl =
+    "$apiCourseUrl/api/v1/homepage/course_latest_id";
+
+const String listIdBusinessCourseUrl =
+    "$apiCourseUrl/api/v1/course/category/562/coursesids?urutan=siswa-terbanyak";
+
+const String listIdPengembanganKarirCourseUrl =
+    "$apiCourseUrl/api/v1/course/category/1733/coursesids?urutan=siswa-terbanyak";
+
+const String listIdRecomendationCourseUrl =
+    "$apiCourseUrl/api/v1/course/list_title";
+
+const String trendingCourseUrl = "$apiCourseUrl/api/v1/course";
+
+const String newestCourseUrl = "$apiCourseUrl/api/v1/course";
+
+const String blogUrl =
+    'https://arkademi.com/blog/wp-json/wp/v2/posts/?per_page';
