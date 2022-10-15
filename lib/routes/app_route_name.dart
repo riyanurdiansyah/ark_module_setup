@@ -33,6 +33,8 @@ abstract class AppRouteName {
 
   static const category = "/ark-category";
 
+  static const blogDetail = "/ark-blog-detail";
+
   static const search = "/search";
 
   static const kelas = "/kelas";
