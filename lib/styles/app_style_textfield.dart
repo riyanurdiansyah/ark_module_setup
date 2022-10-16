@@ -1,5 +1,6 @@
 import 'package:ark_module_setup/styles/app_style_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'app_color.dart';
 
 class AppStyleTextfield {
@@ -93,6 +94,39 @@ class AppStyleTextfield {
           color: Colors.black38,
         ),
         borderRadius: BorderRadius.circular(5),
+      ),
+    );
+  }
+
+  static searchBarDecoration() {
+    return InputDecoration(
+      filled: true,
+      fillColor: const Color.fromRGBO(241, 242, 244, 1),
+      border: OutlineInputBorder(
+        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      enabledBorder: OutlineInputBorder(
+        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderRadius: BorderRadius.circular(5),
+      ),
+      contentPadding: EdgeInsets.only(
+          top: Get.size.shortestSide < 600 ? 5 : 20,
+          bottom: Get.size.shortestSide < 600 ? 5 : 20,
+          left: 20,
+          right: 10),
+      hintText: "Cari kelas",
+      hintStyle: TextStyle(
+          color: kNewBlack2b, fontSize: Get.size.shortestSide < 600 ? 14 : 25),
+      prefixIcon: IconButton(
+        icon: const Icon(Icons.arrow_back),
+        onPressed: () => Get.back(),
+        color: kPrimaryColor,
+        iconSize: Get.size.shortestSide < 600 ? 24 : 30,
       ),
     );
   }

@@ -42,8 +42,7 @@ const String cityUrl =
 const String linkedinUrl =
     "https://www.linkedin.com/profile/add?startTask=CERTIFICATION_NAM";
 
-const String courseUrl =
-    "$apiMemberUrl/api/v1/profile?tab=courses&per_page=100";
+const String courseUrl = "$apiCourseUrl/api/v1/course";
 
 const String listCertificateUrl =
     "$apiMemberUrl/api/arkademi/get_user_certificate";
@@ -65,10 +64,6 @@ const String listIdPengembanganKarirCourseUrl =
 
 const String listIdRecomendationCourseUrl =
     "$apiCourseUrl/api/v1/course/list_title";
-
-const String trendingCourseUrl = "$apiCourseUrl/api/v1/course";
-
-const String newestCourseUrl = "$apiCourseUrl/api/v1/course";
 
 const String blogUrl =
     'https://arkademi.com/blog/wp-json/wp/v2/posts/?per_page';

@@ -11,6 +11,8 @@ abstract class AppRouteName {
 
   static const cpnsWebView = "/cpnsWebView";
 
+  static const arkCourse = "/ark-course";
+
   static const auth = "/auth";
 
   static const signin = "/signin";
@@ -33,9 +35,11 @@ abstract class AppRouteName {
 
   static const category = "/ark-category";
 
+  static const blogAll = "/ark-blog";
+
   static const blogDetail = "/ark-blog-detail";
 
-  static const search = "/search";
+  static const search = "/ark-search";
 
   static const kelas = "/kelas";
 
