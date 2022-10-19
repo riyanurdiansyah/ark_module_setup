@@ -11,6 +11,8 @@ abstract class AppRouteName {
 
   static const cpnsWebView = "/cpnsWebView";
 
+  static const arkCourseJrc = "/ark-course-jrc";
+
   static const arkCourse = "/ark-course";
 
   static const auth = "/auth";

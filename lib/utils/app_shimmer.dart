@@ -11,7 +11,10 @@ class AppShimmer {
       baseColor: Colors.grey[300]!,
       highlightColor: Colors.grey[100]!,
       child: Container(
-        color: Colors.grey,
+        decoration: BoxDecoration(
+          color: Colors.grey,
+          borderRadius: BorderRadius.circular(6),
+        ),
         height: height ?? 80,
         width: width ?? Get.width,
       ),
