@@ -15,6 +15,10 @@ abstract class AppRouteName {
 
   static const arkCourse = "/ark-course";
 
+  static const arkCategory = "/ark-category";
+
+  static const arkCategoryResult = "/ark-category-result";
+
   static const arkWishlist = "/ark-wishlist";
 
   static const auth = "/auth";
