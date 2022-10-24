@@ -69,3 +69,5 @@ const String wishlistUrl = "$apiCourseUrl/api/v1/user/listFavorites";
 
 const String blogUrl =
     'https://arkademi.com/blog/wp-json/wp/v2/posts/?per_page';
+
+const String lisIdCategoryCourseUrl = "$apiCourseUrl/api/v1/course/category";

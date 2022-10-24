@@ -10,10 +10,10 @@ class CourseFlagDTO extends CourseFlagEntity {
   });
 
   factory CourseFlagDTO.fromJson(Map<String, dynamic> json) => CourseFlagDTO(
-        whatsapp: json["whatsapp"],
-        prakerja: json["prakerja"],
-        revamp: json["revamp"],
-        jrc: json["jrc"],
-        group: json["group"],
+        whatsapp: json["whatsapp"] ?? "",
+        prakerja: json["prakerja"] ?? "",
+        revamp: json["revamp"] ?? "",
+        jrc: json["jrc"] ?? "",
+        group: json["group"] ?? "",
       );
 }

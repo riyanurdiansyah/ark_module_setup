@@ -61,8 +61,6 @@ export 'src/domain/entities/provinsi_entity.dart';
 export 'src/domain/entities/remote_config_entity.dart';
 export 'src/domain/entities/sertifikat_entity.dart';
 export 'src/domain/entities/slider_entity.dart';
-export 'src/domain/entities/wishlist_entity.dart';
-export 'src/domain/entities/wishlist_course_entity.dart';
 
 ///DTO
 export 'src/data/dto/blog_dto.dart';
@@ -85,5 +83,3 @@ export 'src/data/dto/provinsi_dto.dart';
 export 'src/data/dto/remote_config_dto.dart';
 export 'src/data/dto/sertifikat_dto.dart';
 export 'src/data/dto/slider_dto.dart';
-export 'src/data/dto/wishlist_course_dto.dart';
-export 'src/data/dto/wishlist_dto.dart';

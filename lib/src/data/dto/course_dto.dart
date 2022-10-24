@@ -98,8 +98,8 @@ class CourseDataDTO extends CourseDataEntity {
                 json["sale_price"] == false ||
                 json['sale_price'] == "0"
             ? 0.0
-            : ((double.parse(json['regular_price']) -
-                    double.parse(json['sale_price'])) /
+            : ((double.parse(json['regular_price'] ?? "0") -
+                    double.parse(json['sale_price'] ?? "0")) /
                 double.parse(
                   json['regular_price'],
                 ) *
@@ -111,7 +111,7 @@ class CourseDataDTO extends CourseDataEntity {
                 json["course_flag"],
               ),
         peluangKarir:
-            json["peluang_karir"] == false || json["peluang_karir"] == null
+            json["peluang_karir"] == null || json["peluang_karir"] == false
                 ? []
                 : List<String>.from(json["peluang_karir"].map((x) => x)),
         mpLinks: json["mp_links"] == null
