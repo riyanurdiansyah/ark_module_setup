@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:ark_module_setup/ark_module_setup.dart';
 
 CourseDTO courseEntity(String str) => CourseDTO.fromJson(json.decode(str));
@@ -51,13 +50,21 @@ class CourseDataDTO extends CourseDataEntity {
     required super.courseFlag,
     required super.peluangKarir,
     required super.mpLinks,
+    required super.status,
+    required super.categories,
+    required super.ratingCount,
+    required super.lowongan,
+    required super.ygAkanDipelajariWeb,
   });
 
   factory CourseDataDTO.fromJson(Map<String, dynamic> json) => CourseDataDTO(
-        averageRating:
-            json["average_rating"] == 0 || json["average_rating"] == null
-                ? "0"
-                : json["average_rating"],
+        status: json["status"],
+        averageRating: json["average_rating"] == 0 ||
+                json["average_rating"] == null ||
+                json["average_rating"] == "" ||
+                json["average_rating"] == "0"
+            ? "5"
+            : json["average_rating"],
         courseSlug: json["course_slug"] ?? "",
         description: json["description"] ?? "",
         descriptionInstruktur: json["description_instruktur"] ?? "",
@@ -118,5 +125,21 @@ class CourseDataDTO extends CourseDataEntity {
             ? []
             : List<MpLinkDTO>.from(
                 json["mp_links"].map((x) => MpLinkDTO.fromJson(x))),
+        categories: json["categories"] == null
+            ? []
+            : List<CourseCategoryDTO>.from(
+                json["categories"].map((x) => CourseCategoryDTO.fromJson(x))),
+        ratingCount: json["rating_count"] == null || json["rating_count"] == 0
+            ? '0'
+            : json["rating_count"],
+        lowongan: json["lowongan"] == null
+            ? const LowonganDTO()
+            : LowonganDTO.fromJson(
+                json["lowongan"],
+              ),
+        ygAkanDipelajariWeb: json["yg_akan_dipelajari_web"] == false ||
+                json["yg_akan_dipelajari_web"] == null
+            ? []
+            : List<String>.from(json["yg_akan_dipelajari_web"].map((x) => x)),
       );
 }

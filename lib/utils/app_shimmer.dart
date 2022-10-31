@@ -3,6 +3,43 @@ import 'package:get/get.dart';
 import 'package:shimmer/shimmer.dart';
 
 class AppShimmer {
+  static listTile({
+    double? width,
+    double? height,
+  }) {
+    return Shimmer.fromColors(
+      baseColor: Colors.grey[300]!,
+      highlightColor: Colors.grey[100]!,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 8.0),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: height ?? 50,
+              width: width ?? 50,
+              decoration: BoxDecoration(
+                color: Colors.grey[200]!,
+              ),
+            ),
+            const SizedBox(
+              width: 10,
+            ),
+            Expanded(
+              child: Container(
+                height: height ?? 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(2),
+                  color: Colors.grey[200]!,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   static loadImage(
     double? width,
     double? height,

@@ -39,7 +39,7 @@ abstract class AppRouteName {
 
   static const wishlist = "/wishlist";
 
-  static const notification = "/notification";
+  static const notification = "/ark-notification";
 
   static const category = "/ark-category";
 
@@ -70,4 +70,10 @@ abstract class AppRouteName {
   static const maintenance = "/maintenance";
 
   static const mainPrakerja = "/main-prakerja";
+
+  static const gamee = "/ark-gamee";
+
+  static const minicourse = "/ark-minicourse";
+
+  static const minicourseDetail = "/ark-minicourse-detail";
 }

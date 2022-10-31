@@ -71,3 +71,6 @@ const String blogUrl =
     'https://arkademi.com/blog/wp-json/wp/v2/posts/?per_page';
 
 const String lisIdCategoryCourseUrl = "$apiCourseUrl/api/v1/course/category";
+
+const String gamebaseUrl =
+    "https://us-central1-arkademi-flutter-v201.cloudfunctions.net/app/cardbase";

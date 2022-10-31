@@ -39,6 +39,8 @@ export 'utils/app_url.dart';
 
 export 'common_widget/error_image_widget.dart';
 export 'common_widget/button_reusable_widget.dart';
+export 'common_widget/ark_class_card.dart';
+export 'common_widget/ark_banner_text_with_class.dart';
 
 ///ENTITY
 export 'src/domain/entities/blog_entity.dart';
@@ -61,6 +63,11 @@ export 'src/domain/entities/provinsi_entity.dart';
 export 'src/domain/entities/remote_config_entity.dart';
 export 'src/domain/entities/sertifikat_entity.dart';
 export 'src/domain/entities/slider_entity.dart';
+export 'src/domain/entities/user_status_entity.dart';
+export 'src/domain/entities/curriculum_entity.dart';
+export 'src/domain/entities/course_category_entity.dart';
+export 'src/domain/entities/ulasan_entity.dart';
+export 'src/domain/entities/lowongan_entity.dart';
 
 ///DTO
 export 'src/data/dto/blog_dto.dart';
@@ -83,3 +90,8 @@ export 'src/data/dto/provinsi_dto.dart';
 export 'src/data/dto/remote_config_dto.dart';
 export 'src/data/dto/sertifikat_dto.dart';
 export 'src/data/dto/slider_dto.dart';
+export 'src/data/dto/user_status_dto.dart';
+export 'src/data/dto/curriculum_dto.dart';
+export 'src/data/dto/course_category_dto.dart';
+export 'src/data/dto/ulasan_dto.dart';
+export 'src/data/dto/lowongan_dto.dart';
