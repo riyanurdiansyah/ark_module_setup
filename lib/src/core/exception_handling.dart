@@ -1,6 +1,9 @@
+import 'dart:developer';
+
 import 'package:ark_module_setup/ark_module_setup.dart';
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 /*
@@ -11,10 +14,16 @@ import 'package:fluttertoast/fluttertoast.dart';
 class ExceptionHandle {
   static execute(Failure fail) {
     if (fail is HttpFailure) {
-      Fluttertoast.showToast(msg: "Error ${fail.code}x : ${fail.message}");
+      log("Error ${fail.code}x :  ${fail.message}");
+      if (kDebugMode) {
+        Fluttertoast.showToast(msg: "Error ${fail.code}x : ${fail.message}");
+      }
     } else {
-      Fluttertoast.showToast(
-          msg: "Failed connect to server \n Please check your connection");
+      log("Error: Failed connect to server Please check your connection");
+      if (kDebugMode) {
+        Fluttertoast.showToast(
+            msg: "Failed connect to server \n Please check your connection");
+      }
     }
   }
 }
