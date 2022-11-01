@@ -45,11 +45,10 @@ class ExceptionHandleResponse {
   jika terjadi error pada proses hit API
 */
 class ExceptionHandleResponseAPI {
-  static execute(int code, Response<dynamic> response, String? errorException,
-      String? errorMsg) {
+  static execute(int code, Response<dynamic> response, String? errorMsg) {
     if (code >= 500) {
-      throw CustomException(code,
-          errorException ?? 'Error exception... failed connect to server');
+      throw CustomException(
+          code, errorMsg ?? 'Error... failed connect to server');
     } else if (code != 200) {
       throw CustomException(
         code,

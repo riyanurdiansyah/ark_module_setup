@@ -1,6 +1,11 @@
 import 'dart:developer';
 import 'package:dio/dio.dart';
 
+/*
+  INI UNTUK INTERCEPT TOKEN
+  BISA JUGA UNTUK REFRESH TOKEN KALAU TOKEN EXPIRED
+  JIK PAKAI JWT NANTI
+*/
 Future dioInterceptor(Dio dio, String token) async {
   dio.interceptors.add(
     InterceptorsWrapper(

@@ -76,4 +76,6 @@ abstract class AppRouteName {
   static const minicourse = "/ark-minicourse";
 
   static const minicourseDetail = "/ark-minicourse-detail";
+
+  static const historyTransactionPage = "/historyTransactionPage";
 }
