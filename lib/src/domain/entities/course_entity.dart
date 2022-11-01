@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:ark_module_setup/src/domain/entities/course_category_entity.dart';
+import 'package:ark_module_setup/src/domain/entities/lowongan_entity.dart';
 import 'package:equatable/equatable.dart';
 
 import 'course_flag_entity.dart';
@@ -62,6 +64,11 @@ class CourseDataEntity extends Equatable {
     required this.courseFlag,
     required this.peluangKarir,
     required this.mpLinks,
+    required this.status,
+    required this.categories,
+    required this.ratingCount,
+    required this.lowongan,
+    required this.ygAkanDipelajariWeb,
   });
 
   final String averageRating;
@@ -83,6 +90,11 @@ class CourseDataEntity extends Equatable {
   final CourseFlagEntity courseFlag;
   final List<String> peluangKarir;
   final List<MpLinkEntity> mpLinks;
+  final String status;
+  final List<CourseCategoryEntity> categories;
+  final String ratingCount;
+  final LowonganEntity lowongan;
+  final List<String> ygAkanDipelajariWeb;
 
   CourseDataEntity copyWith({
     String? averageRating,
@@ -104,6 +116,11 @@ class CourseDataEntity extends Equatable {
     CourseFlagEntity? courseFlag,
     List<String>? peluangKarir,
     List<MpLinkEntity>? mpLinks,
+    String? status,
+    List<CourseCategoryEntity>? categories,
+    String? ratingCount,
+    LowonganEntity? lowongan,
+    List<String>? ygAkanDipelajariWeb,
   }) =>
       CourseDataEntity(
         averageRating: averageRating ?? this.averageRating,
@@ -126,6 +143,11 @@ class CourseDataEntity extends Equatable {
         courseFlag: courseFlag ?? this.courseFlag,
         peluangKarir: peluangKarir ?? this.peluangKarir,
         mpLinks: mpLinks ?? this.mpLinks,
+        status: status ?? this.status,
+        categories: categories ?? this.categories,
+        ratingCount: ratingCount ?? this.ratingCount,
+        lowongan: lowongan ?? this.lowongan,
+        ygAkanDipelajariWeb: ygAkanDipelajariWeb ?? this.ygAkanDipelajariWeb,
       );
 
   Map<String, dynamic> toJson() => {
@@ -144,6 +166,7 @@ class CourseDataEntity extends Equatable {
         "total_students": totalStudents,
         "instructor": instructor.toJson(),
         "peluang_karir": peluangKarir,
+        "status": status,
       };
 
   @override
@@ -163,5 +186,8 @@ class CourseDataEntity extends Equatable {
         totalStudents,
         courseFlag,
         peluangKarir,
+        status,
+        categories,
+        ratingCount,
       ];
 }

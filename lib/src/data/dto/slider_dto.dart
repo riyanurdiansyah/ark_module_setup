@@ -29,11 +29,11 @@ class SliderDataDTO extends SliderDataEntity {
   });
 
   factory SliderDataDTO.fromJson(Map<String, dynamic> json) => SliderDataDTO(
-        id: json["id"],
-        index: json["index"],
-        newTab: json["newTab"],
-        link: json["link"],
-        img: json["img"],
-        imgMobile: json["imgMobile"],
+        id: json["id"] ?? 0,
+        index: json["index"] ?? 0,
+        newTab: json["newTab"] ?? false,
+        link: json["link"] ?? "",
+        img: json["img"] ?? "",
+        imgMobile: json["imgMobile"] ?? "",
       );
 }

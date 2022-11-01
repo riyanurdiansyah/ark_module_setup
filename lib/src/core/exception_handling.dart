@@ -3,6 +3,11 @@ import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+/*
+  Handle error 
+  Bisa digunakan untuk memberi 
+  pesan ke user jika request nya gagal
+*/
 class ExceptionHandle {
   static execute(Failure fail) {
     if (fail is HttpFailure) {
@@ -14,6 +19,11 @@ class ExceptionHandle {
   }
 }
 
+/*
+  Handle error 
+  Digunakan pada repository
+  jika terjadi error pada proses try catch
+*/
 class ExceptionHandleResponse {
   static execute(Object e) {
     if (e is CustomException) {
@@ -29,12 +39,16 @@ class ExceptionHandleResponse {
   }
 }
 
+/*
+  Handle error 
+  Digunakan pada file datasource
+  jika terjadi error pada proses hit API
+*/
 class ExceptionHandleResponseAPI {
-  static execute(int code, Response<dynamic> response, String? errorException,
-      String? errorMsg) {
+  static execute(int code, Response<dynamic> response, String? errorMsg) {
     if (code >= 500) {
-      throw CustomException(code,
-          errorException ?? 'Error exception... failed connect to server');
+      throw CustomException(
+          code, errorMsg ?? 'Error... failed connect to server');
     } else if (code != 200) {
       throw CustomException(
         code,

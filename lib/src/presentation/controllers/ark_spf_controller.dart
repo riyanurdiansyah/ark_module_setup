@@ -15,6 +15,18 @@ class ArkSpfController extends GetxController {
   final Rx<bool> _isShowDialogIg = false.obs;
   Rx<bool> get isShowDialogIg => _isShowDialogIg;
 
+  final Rx<String> _token = "".obs;
+  Rx<String> get token => _token;
+
+  final Rx<String> _tokenPrakerja = "".obs;
+  Rx<String> get tokenPrakerja => _tokenPrakerja;
+
+  final Rx<String> _tokenWPLMS = "".obs;
+  Rx<String> get tokenWPLMS => _tokenWPLMS;
+
+  final Rx<String> _email = "".obs;
+  Rx<String> get email => _email;
+
   @override
   void onInit() async {
     prefs = await SharedPreferences.getInstance();
@@ -26,6 +38,10 @@ class ArkSpfController extends GetxController {
     log('SpfC : Get Login Info');
     _isLogin.value = prefs.getBool('user_login') ?? false;
     _isPrakerja.value = prefs.getBool('user_prakerja') ?? false;
+    _token.value = prefs.getString('token_access') ?? "";
+    _tokenPrakerja.value = prefs.getString('token_access_prakerja') ?? "";
+    _email.value = prefs.getString('user_email') ?? "";
+    _tokenWPLMS.value = prefs.getString('token_access_wp') ?? "";
   }
 
   Future<void> getDialogFlag() async {

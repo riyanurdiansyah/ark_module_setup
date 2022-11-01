@@ -16,6 +16,13 @@ List<Map<String, String>> navbarItems = [
   },
 ];
 
+List<String> notificationStatus = [
+  'Semua',
+  'Menunggu',
+  'Berhasil',
+  // 'Gagal'
+]; //'Di
+
 List<String> listProfesi = [
   'Silahkan Pilih Profesi',
   'Karyawan Swasta',
