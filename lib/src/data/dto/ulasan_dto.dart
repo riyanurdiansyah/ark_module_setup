@@ -70,7 +70,9 @@ class UlasanDataDTO extends UlasanDataEntity {
         commentId: json["comment_ID"] ?? "",
         commentPostId: json["comment_post_ID"] ?? "",
         commentAuthor: json["comment_author"] ?? "",
-        commentDate: json["comment_date"] ?? "",
+        commentDate: json["comment_date"] == null
+            ? DateTime.now()
+            : DateTime.parse(json["comment_date"]),
         commentContent: json["comment_content"] ?? "",
         userId: json["user_id"] ?? "",
         nameAuthor: json["name_author"] ?? "",
