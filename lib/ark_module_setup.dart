@@ -22,6 +22,7 @@ export 'utils/app_dialog.dart';
 export 'utils/app_snackbar.dart';
 export 'utils/app_url.dart';
 export 'utils/app_validator.dart';
+export 'utils/app_format_txt.dart';
 
 export 'routes/app_route.dart';
 export 'routes/app_route_name.dart';
