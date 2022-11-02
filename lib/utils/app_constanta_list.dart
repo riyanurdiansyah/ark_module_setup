@@ -66,3 +66,53 @@ const List<Map<String, String>> cardBase = [
     'link': 'https://learnlab.typeform.com/to/FyW1A3Rl',
   },
 ];
+
+const List<String> assetImageForPrakerja = [
+  'assets/images/validate-kupon.jpg',
+  'assets/images/panduan-prakerja.jpg',
+  'assets/images/lacak-sertifikat.png'
+];
+
+const List<Map<String, String>> splashTour = [
+  {
+    'title': 'Lembaga Kursus Resmi',
+    'subtitle':
+        'Tersedia pilihan kursus yang luas dari beragam kategori yang diajarkan oleh berbagai lembaga kursus untuk meningkatkan keahlian dan karier anda.',
+    'image': 'assets/images/auth-0.png',
+  },
+  {
+    'title': 'Belajar Full Online',
+    'subtitle':
+        'Semua kursus tersedia dan dibawakan secara online lewat recorded video. Anda bebas belajar kapan saja dan dimana saja melalui mobile app atau web.',
+    'image': 'assets/images/auth-1.png',
+  },
+  {
+    'title': 'Sertifikat Cetak',
+    'subtitle':
+        'Berbagai kursus yang menawarkan sertifikat kelulusan atas nama anda yang dicetak hard copy dan dikirim langsung ke alamat anda.',
+    'image': 'assets/images/auth-2.png'
+  }
+];
+
+const List<Map<String, dynamic>> categories = [
+  {
+    'id': 2778,
+    'name': 'Job Ready Course',
+    'icon': 'assets/images/job_ready_course.png'
+  },
+  {'id': 562, 'name': 'Bisnis', 'icon': 'assets/images/cat_bisnis.png'},
+  {'id': 1731, 'name': 'Keuangan', 'icon': 'assets/images/cat_keuangan.png'},
+  {
+    'id': 1733,
+    'name': 'Pengembangan Karir',
+    'icon': 'assets/images/cat_pengembangan.png'
+  },
+  {
+    'id': 715,
+    'name': 'Sertifikasi',
+    'icon': 'assets/images/cat_sertifikasi.png'
+  },
+  {'id': 213, 'name': 'Teknologi', 'icon': 'assets/images/cat_teknologi.png'},
+  {'id': 1744, 'name': 'Hobi', 'icon': 'assets/images/cat_hobby.png'},
+  {'id': 399, 'name': 'Bahasa', 'icon': 'assets/images/cat_bahasa.png'},
+];

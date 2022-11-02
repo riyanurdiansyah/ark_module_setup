@@ -78,4 +78,22 @@ abstract class AppRouteName {
   static const minicourseDetail = "/ark-minicourse-detail";
 
   static const historyTransactionPage = "/historyTransactionPage";
+
+  static const mainSkillTree = '/skillTreePage';
+
+  static const resultSkillTree = '/skillTreeResultPage';
+
+  static const arkNotification = "/ark-notification";
+
+  static const arkSearch = "/ark-search";
+
+  static const arkBlog = "/ark-blog";
+
+  static const arkGamee = "/ark-gamee";
+
+  static const arkMinicourse = "/ark-minicourse";
+
+  static const arkMinicourseDetail = "/ark-minicourse-detail";
+
+  static const arkBlogDetail = "/ark-blog-detail";
 }
