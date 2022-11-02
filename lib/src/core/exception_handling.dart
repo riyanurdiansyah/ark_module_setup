@@ -56,9 +56,11 @@ class ExceptionHandleResponse {
 class ExceptionHandleResponseAPI {
   static execute(int code, Response<dynamic> response, String? errorMsg) {
     if (code >= 500) {
+      log("SINI");
       throw CustomException(
           code, errorMsg ?? 'Error... failed connect to server');
     } else if (code != 200) {
+      log("SINI");
       throw CustomException(
         code,
         response.data['message'] ??
