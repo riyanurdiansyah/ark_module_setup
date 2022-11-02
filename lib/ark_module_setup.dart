@@ -29,6 +29,7 @@ export 'routes/app_route_name.dart';
 export 'styles/app_color.dart';
 export 'styles/app_style_text.dart';
 export 'styles/app_style_textfield.dart';
+export 'styles/app_text.dart';
 
 export 'services/dyanamic_links.dart';
 export 'services/firebase_analytics.dart';
