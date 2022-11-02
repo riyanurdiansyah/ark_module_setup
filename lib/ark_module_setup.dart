@@ -70,6 +70,7 @@ export 'src/domain/entities/curriculum_entity.dart';
 export 'src/domain/entities/course_category_entity.dart';
 export 'src/domain/entities/ulasan_entity.dart';
 export 'src/domain/entities/lowongan_entity.dart';
+export 'src/domain/entities/coupon_entity.dart';
 
 ///DTO
 export 'src/data/dto/blog_dto.dart';
@@ -97,3 +98,4 @@ export 'src/data/dto/curriculum_dto.dart';
 export 'src/data/dto/course_category_dto.dart';
 export 'src/data/dto/ulasan_dto.dart';
 export 'src/data/dto/lowongan_dto.dart';
+export 'src/data/dto/coupon_dto.dart';
