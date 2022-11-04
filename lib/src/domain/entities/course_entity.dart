@@ -151,6 +151,7 @@ class CourseDataEntity extends Equatable {
       );
 
   Map<String, dynamic> toJson() => {
+        "status": status,
         "average_rating": averageRating,
         "course_slug": courseSlug,
         "description": description,
@@ -165,8 +166,12 @@ class CourseDataEntity extends Equatable {
         "sale_price": salePrice,
         "total_students": totalStudents,
         "instructor": instructor.toJson(),
+        "course_flag": courseFlag,
         "peluang_karir": peluangKarir,
-        "status": status,
+        "mp_links": List<dynamic>.from(mpLinks.map((x) => x.toJson())),
+        "categories": categories,
+        "rating_count": ratingCount,
+        "lowongan": lowongan
       };
 
   @override
