@@ -8,11 +8,13 @@ class SertifikatDTO extends SertifikatEntity {
 
   factory SertifikatDTO.fromJson(Map<String, dynamic> json) => SertifikatDTO(
         success: json['success'],
-        certificates: List<SertifikatDataDTO>.from(
-          json["certificates"].map(
-            (e) => SertifikatDataDTO.fromJson(e),
-          ),
-        ),
+        certificates: json["certificates"] == null
+            ? []
+            : List<SertifikatDataDTO>.from(
+                json["certificates"].map(
+                  (e) => SertifikatDataDTO.fromJson(e),
+                ),
+              ),
       );
 }
 
