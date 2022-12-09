@@ -8,6 +8,37 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class AppDialog {
+  static dialogDeleteAccount() {
+    Get.back();
+    Get.defaultDialog(
+      onWillPop: () async => false,
+      radius: 8,
+      middleText: '',
+      title: '',
+      barrierDismissible: false,
+      titleStyle: const TextStyle(fontSize: 0),
+      content: Column(
+        children: [
+          const SizedBox(height: 25),
+          Lottie.asset('assets/images/success-animation.json',
+              repeat: false, height: 100, width: 100),
+          const SizedBox(height: 35),
+          const Text(
+            'Tautan untuk menghapus akun sudah terkirim ke email Anda!',
+            style: TextStyle(
+              height: 1.4,
+              fontSize: 16.5,
+              color: kNewBlack1,
+              fontWeight: FontWeight.bold,
+            ),
+            textAlign: TextAlign.center,
+          )
+        ],
+      ),
+    );
+    Future.delayed(const Duration(milliseconds: 2500), () => Get.back());
+  }
+
   static dialogNeedUpdate() {
     final mC = Get.find<ArkMainController>();
     return Get.dialog(

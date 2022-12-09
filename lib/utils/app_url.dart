@@ -31,6 +31,8 @@ const String faceRecogUrl =
 
 const String resetPasswordUrl = "$apiMemberUrl/api/v1/user/password/reset";
 
+const String deleteAccountUrl = "$apiMemberUrl/api/v1/reqDeleteAkun";
+
 const String updateProfileUrl = "$apiMemberUrl/api/v1/auth/update/profile";
 
 const String provinsiUrl =
