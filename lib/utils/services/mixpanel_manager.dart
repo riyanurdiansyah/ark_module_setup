@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/helper/app_print.dart';
+import 'package:ark_module_setup/utils/app_print.dart';
 import 'package:mixpanel_flutter/mixpanel_flutter.dart';
 
 class MixpanelManager {

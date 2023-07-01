@@ -17,7 +17,6 @@ export 'src/core/failures.dart';
 export 'src/core/interceptor.dart';
 
 export 'utils/app_constanta.dart';
-export 'utils/app_constanta_list.dart';
 export 'utils/app_dialog.dart';
 export 'utils/app_snackbar.dart';
 export 'utils/app_url.dart';
@@ -27,22 +26,17 @@ export 'utils/app_format_txt.dart';
 export 'routes/app_route.dart';
 export 'routes/app_route_name.dart';
 
-export 'styles/app_color.dart';
-export 'styles/app_style_text.dart';
-export 'styles/app_style_textfield.dart';
-export 'styles/app_text.dart';
-
-export 'services/dyanamic_links.dart';
-export 'services/firebase_analytics.dart';
-export 'services/mixpanel_manager.dart';
-export 'services/push_notification_service.dart';
+export 'utils/services/dynamic_links.dart';
+export 'utils/services/firebase_analytics.dart';
+export 'utils/services/mixpanel_manager.dart';
+export 'utils/services/push_notification_service.dart';
 
 export 'utils/app_url.dart';
 
-export 'common_widget/error_image_widget.dart';
-export 'common_widget/button_reusable_widget.dart';
-export 'common_widget/ark_class_card.dart';
-export 'common_widget/ark_banner_text_with_class.dart';
+export 'src/presentation/common_widget/error_image_widget.dart';
+export 'src/presentation/common_widget/button_reusable_widget.dart';
+export 'src/presentation/common_widget/ark_class_card.dart';
+export 'src/presentation/common_widget/ark_banner_text_with_class.dart';
 
 ///ENTITY
 export 'src/domain/entities/blog_entity.dart';

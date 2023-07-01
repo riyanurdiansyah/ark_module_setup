@@ -1,7 +1,7 @@
-import 'package:ark_module_setup/styles/app_style_text.dart';
+import 'package:ark_module_setup/utils/app_style_text.dart';
+import 'package:ark_module_setup/utils/constants/constant_color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'app_color.dart';
 
 class AppStyleTextfield {
   static customOutlined(
@@ -54,7 +54,7 @@ class AppStyleTextfield {
           ),
           borderRadius: BorderRadius.circular(5)),
       focusedBorder: OutlineInputBorder(
-          borderSide: const BorderSide(color: kPrimaryColor),
+          borderSide: const BorderSide(color: kBlue1),
           borderRadius: BorderRadius.circular(5)),
       enabledBorder: OutlineInputBorder(
           borderSide: const BorderSide(
@@ -86,7 +86,7 @@ class AppStyleTextfield {
       focusedBorder: OutlineInputBorder(
           borderSide: const BorderSide(
             width: 2,
-            color: kPrimaryColor,
+            color: kBlue1,
           ),
           borderRadius: BorderRadius.circular(5)),
       enabledBorder: OutlineInputBorder(
@@ -103,15 +103,15 @@ class AppStyleTextfield {
       filled: true,
       fillColor: const Color.fromRGBO(241, 242, 244, 1),
       border: OutlineInputBorder(
-        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderSide: const BorderSide(width: 0.2, color: kGrey2),
         borderRadius: BorderRadius.circular(5),
       ),
       focusedBorder: OutlineInputBorder(
-        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderSide: const BorderSide(width: 0.2, color: kGrey2),
         borderRadius: BorderRadius.circular(5),
       ),
       enabledBorder: OutlineInputBorder(
-        borderSide: const BorderSide(width: 0.2, color: kNewBlack5a),
+        borderSide: const BorderSide(width: 0.2, color: kGrey2),
         borderRadius: BorderRadius.circular(5),
       ),
       contentPadding: EdgeInsets.only(
@@ -121,11 +121,11 @@ class AppStyleTextfield {
           right: 10),
       hintText: "Cari kelas",
       hintStyle: TextStyle(
-          color: kNewBlack2b, fontSize: Get.size.shortestSide < 600 ? 14 : 25),
+          color: kBlack3, fontSize: Get.size.shortestSide < 600 ? 14 : 25),
       prefixIcon: IconButton(
         icon: const Icon(Icons.arrow_back),
         onPressed: () => Get.back(),
-        color: kPrimaryColor,
+        color: kBlue1,
         iconSize: Get.size.shortestSide < 600 ? 24 : 30,
       ),
     );

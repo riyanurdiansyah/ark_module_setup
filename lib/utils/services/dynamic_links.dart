@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/helper/app_print.dart';
+import 'package:ark_module_setup/utils/app_print.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

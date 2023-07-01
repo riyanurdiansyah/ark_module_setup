@@ -11,6 +11,7 @@ class UserStatusDTO extends UserStatusEntity {
     required super.userStatus,
     required super.userExpiry,
     required super.isExpired,
+    required super.isw,
   });
 
   factory UserStatusDTO.fromJson(Map<String, dynamic> json) {
@@ -29,6 +30,7 @@ class UserStatusDTO extends UserStatusEntity {
       userStatus: json["user_status"] ?? "",
       userExpiry: json["user_expiry"] ?? "",
       isExpired: expired,
+      isw: json["isw"] ?? 0,
     );
   }
 }

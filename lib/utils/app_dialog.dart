@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/utils/app_style_text.dart';
+import 'package:ark_module_setup/utils/constants/constant_color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
@@ -28,7 +30,7 @@ class AppDialog {
             style: TextStyle(
               height: 1.4,
               fontSize: 16.5,
-              color: kNewBlack1,
+              color: kBlack1,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
@@ -159,7 +161,7 @@ class AppDialog {
                     height: 1.4,
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.bold,
-                    color: kNewBlack1,
+                    color: kBlack1,
                     fontSize: 13.5,
                   ),
                   textAlign: TextAlign.center,
@@ -176,13 +178,13 @@ class AppDialog {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(9)),
-                      primary: kNewBlack5a,
+                      backgroundColor: kGrey2,
                     ),
                     child: const Text(
                       'Ya',
                       style: TextStyle(
                         fontFamily: 'Montserrat',
-                        color: kNewBlack1,
+                        color: kBlack1,
                         fontSize: 12.5,
                         fontWeight: FontWeight.bold,
                       ),
@@ -200,7 +202,7 @@ class AppDialog {
                     style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(9)),
-                      primary: kPrimaryColor,
+                      backgroundColor: kBlue1,
                     ),
                     child: const Text(
                       'Tidak',
@@ -416,7 +418,7 @@ class AppDialog {
             style: AppStyleText.styleMontserrat(
               fontSize: 16,
               height: 1.4,
-              color: kNewBlack1,
+              color: kBlack1,
               fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.center,
@@ -493,7 +495,7 @@ class AppDialog {
             txtOke,
             style: AppStyleText.styleMontserrat(
               fontSize: 14,
-              color: kPrimaryColor,
+              color: kBlue1,
               fontWeight: FontWeight.bold,
             ),
           ),

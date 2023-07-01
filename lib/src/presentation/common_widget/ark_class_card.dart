@@ -1,4 +1,5 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/utils/constants/constant_color.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -72,7 +73,7 @@ class ArkClassCard extends StatelessWidget {
                     Text(course.instructor.name,
                         maxLines: 1,
                         style: const TextStyle(
-                            color: kNewBlack3,
+                            color: kBlack5,
                             fontSize: 10,
                             fontWeight: FontWeight.bold)),
                     Padding(
@@ -82,7 +83,7 @@ class ArkClassCard extends StatelessWidget {
                           overflow: TextOverflow.ellipsis,
                           style: const TextStyle(
                               height: 1.4,
-                              color: kNewBlack2a,
+                              color: kBlack3,
                               fontSize: 11,
                               fontWeight: FontWeight.bold)),
                     ),
@@ -99,7 +100,7 @@ class ArkClassCard extends StatelessWidget {
                                 : course.averageRating.toString(),
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: kNewBlack2b,
+                              color: kBlack4,
                               fontSize: Get.size.shortestSide < 600 ? 11 : 15,
                             ),
                           ),
@@ -111,7 +112,7 @@ class ArkClassCard extends StatelessWidget {
                                     : " (${course.totalStudents})",
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
-                                color: kNewBlack2b,
+                                color: kBlack4,
                                 fontSize:
                                     Get.size.shortestSide < 600 ? 10 : 15),
                           ),
@@ -127,7 +128,7 @@ class ArkClassCard extends StatelessWidget {
                                 currencyFormatter
                                     .format(int.parse(course.regularPrice)),
                                 style: const TextStyle(
-                                    color: kNewBlack2a,
+                                    color: kBlack3,
                                     fontWeight: FontWeight.w800,
                                     fontSize: 13),
                               ),
@@ -168,12 +169,12 @@ class ArkClassCard extends StatelessWidget {
                                     padding: const EdgeInsets.symmetric(
                                         vertical: 2, horizontal: 4),
                                     decoration: BoxDecoration(
-                                        color: kPrimaryRed4,
+                                        color: kRed4,
                                         borderRadius: BorderRadius.circular(4)),
                                     child: Text(
                                       '${course.discount.floor()}%',
                                       style: const TextStyle(
-                                          color: kPrimaryRed2,
+                                          color: kRed2,
                                           fontSize: 10.5,
                                           fontWeight: FontWeight.w800),
                                     ),
@@ -184,7 +185,7 @@ class ArkClassCard extends StatelessWidget {
                                     style: const TextStyle(
                                         decoration: TextDecoration.lineThrough,
                                         fontWeight: FontWeight.w500,
-                                        color: kNewBlack3,
+                                        color: kBlack5,
                                         fontSize: 10),
                                   ),
                                 ],
@@ -198,7 +199,7 @@ class ArkClassCard extends StatelessWidget {
                                     currencyFormatter
                                         .format(int.parse(course.salePrice)),
                                     style: const TextStyle(
-                                        color: kNewBlack2a,
+                                        color: kBlack3,
                                         fontWeight: FontWeight.w800,
                                         fontSize: 13),
                                   ),

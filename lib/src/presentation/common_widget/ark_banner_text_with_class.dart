@@ -1,5 +1,6 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
 import 'package:ark_module_setup/utils/app_shimmer.dart';
+import 'package:ark_module_setup/utils/constants/constant_color.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -60,7 +61,7 @@ class ArkBannerTextWithClass extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w800,
                       fontSize: Get.size.shortestSide < 600 ? 12 : 19,
-                      color: kPrimaryColor,
+                      color: kBlue1,
                     ),
                   ),
                 )

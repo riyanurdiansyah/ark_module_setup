@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/styles/app_style_text.dart';
+import 'package:ark_module_setup/utils/app_style_text.dart';
 import 'package:flutter/material.dart';
 
 class MaintenancePage extends StatelessWidget {

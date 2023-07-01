@@ -3,11 +3,6 @@ import 'dart:developer';
 
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:ark_module_setup/ark_module_setup.dart';
-import 'package:ark_module_setup/services/dyanamic_links.dart';
-import 'package:ark_module_setup/services/mixpanel_manager.dart';
-import 'package:ark_module_setup/services/push_notification_service.dart';
-import 'package:ark_module_setup/src/data/dto/remote_config_dto.dart';
-import 'package:ark_module_setup/src/domain/entities/remote_config_entity.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
 import 'package:package_info/package_info.dart';
