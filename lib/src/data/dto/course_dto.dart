@@ -1,5 +1,10 @@
 import 'dart:convert';
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/data/dto/course_category_dto.dart';
+import 'package:ark_module_setup/src/data/dto/course_flag_dto.dart';
+import 'package:ark_module_setup/src/data/dto/instructor_dto.dart';
+import 'package:ark_module_setup/src/data/dto/lowongan_dto.dart';
+import 'package:ark_module_setup/src/data/dto/mplink_dto.dart';
+import 'package:ark_module_setup/src/domain/entities/course_entity.dart';
 
 CourseDTO courseEntity(String str) => CourseDTO.fromJson(json.decode(str));
 

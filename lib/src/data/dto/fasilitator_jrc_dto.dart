@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/fasilitator_jrc_entity.dart';
 
 class FasilitatorJrcDTO extends FasilitatorJrcEntity {
   FasilitatorJrcDTO({

@@ -1,5 +1,7 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/routes/app_route_name.dart';
+import 'package:ark_module_setup/src/domain/entities/course_entity.dart';
 import 'package:ark_module_setup/utils/constants/constant_color.dart';
+import 'package:ark_module_setup/utils/services/extension_function.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

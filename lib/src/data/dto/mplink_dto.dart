@@ -1,4 +1,5 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/mplink_entity.dart';
 
 class MpLinkDTO extends MpLinkEntity {
   MpLinkDTO({

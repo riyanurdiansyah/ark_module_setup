@@ -3,9 +3,16 @@ import 'dart:developer';
 
 import 'package:app_tracking_transparency/app_tracking_transparency.dart';
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/data/datasource/remote/ark_main_remote_datasource_impl.dart';
+import 'package:ark_module_setup/src/data/dto/remote_config_dto.dart';
+import 'package:ark_module_setup/src/data/repositories/ark_main_repository_impl.dart';
+import 'package:ark_module_setup/src/domain/entities/remote_config_entity.dart';
+import 'package:ark_module_setup/src/domain/usecases/ark_main_usecase.dart';
+import 'package:ark_module_setup/utils/services/dynamic_links.dart';
+import 'package:ark_module_setup/utils/services/mixpanel_manager.dart';
+import 'package:ark_module_setup/utils/services/push_notification_service.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
-import 'package:package_info/package_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ArkMainController extends GetxController {
@@ -42,7 +49,8 @@ class ArkMainController extends GetxController {
     _prefs = await SharedPreferences.getInstance();
     await MixpanelManager.init();
     await checkRemoteConfig();
-    await checkAppVersion();
+    //TODO
+    // await checkAppVersion();
     PushNotificationService(_messaging)
       ..initialize()
       ..initializeLocalNotification();
@@ -66,17 +74,18 @@ class ArkMainController extends GetxController {
     }
   }
 
-  Future checkAppVersion() async {
-    final info = await PackageInfo.fromPlatform();
-    // final currentVersion =
-    //     double.parse(info.version.trim().replaceAll(".", ""));
-    _buildNumber.value =
-        double.parse(info.buildNumber.trim().replaceAll(".", ""));
+  //TODO
+  // Future checkAppVersion() async {
+  //   final info = await PackageInfo.fromPlatform();
+  //   // final currentVersion =
+  //   //     double.parse(info.version.trim().replaceAll(".", ""));
+  //   _buildNumber.value =
+  //       double.parse(info.buildNumber.trim().replaceAll(".", ""));
 
-    if (_remoteConfig.value.newVersion > _buildNumber.value) {
-      AppDialog.dialogNeedUpdate();
-    }
-  }
+  //   if (_remoteConfig.value.newVersion > _buildNumber.value) {
+  //     AppDialog.dialogNeedUpdate();
+  //   }
+  // }
 
   Future checkRemoteConfig() async {
     final remoteConfigCache = _prefs.getString('remote_config') ?? '';

@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/blog_entity.dart';
 
 List<BlogDTO> blogEntityFromJson(String str) =>
     List<BlogDTO>.from(json.decode(str).map((x) => BlogDTO.fromJson(x)));

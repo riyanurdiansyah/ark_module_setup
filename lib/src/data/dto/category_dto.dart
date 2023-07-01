@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/category_entity.dart';
 
 CategoryDTO categoryEntityFromJson(String str) =>
     CategoryDTO.fromJson(json.decode(str));

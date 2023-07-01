@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/coin_entity.dart';
 
 class CoinDTO extends CoinEntity {
   const CoinDTO({

@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/course_flag_entity.dart';
 
 class CourseFlagDTO extends CourseFlagEntity {
   CourseFlagDTO({

@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/daftar_loker_jrc_entity.dart';
 
 class DaftarLokerJrcDTO extends DaftarLokerJrcEntity {
   DaftarLokerJrcDTO({

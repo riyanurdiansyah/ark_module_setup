@@ -1,5 +1,7 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/data/datasource/remote/ark_main_remote_datasource.dart';
 import 'package:ark_module_setup/src/domain/entities/remote_config_entity.dart';
+import 'package:ark_module_setup/src/domain/repositories/ark_main_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class ArkMainRepositoryImpl implements ArkMainRepository {
@@ -7,7 +9,7 @@ class ArkMainRepositoryImpl implements ArkMainRepository {
 
   ArkMainRepositoryImpl(this.dataSource);
   @override
-  Future<Either<Failure, RemoteConfigEntity>> getRemoteConfig() async {
+  Future<Either<Failures, RemoteConfigEntity>> getRemoteConfig() async {
     try {
       final remoteConfig = await dataSource.getRemoteConfig();
       return Right(remoteConfig);

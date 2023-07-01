@@ -64,7 +64,24 @@ class BlogEntity {
         "featured_img_app": featuredImgApp,
       };
 
-  static fromJson(x) {}
+  factory BlogEntity.fromJson(Map<String, dynamic> json) => BlogEntity(
+        id: json["id"],
+        date: json["date"] == null
+            ? DateTime.now()
+            : DateTime.parse(json["date"]),
+        slug: json["slug"],
+        link: json["link"],
+        title: json["title"] == null
+            ? ContentBlogEntity(rendered: "")
+            : ContentBlogEntity.fromJson(json["title"]),
+        content: ContentBlogEntity.fromJson(json["content"]),
+        featuredImgApp: json["featured_img_app"] == false ||
+                json["featured_img_app"] == null
+            ? ""
+            : json["featured_img_app"],
+        authorName: json["author_name"] ?? "",
+        featuredImg: json["featured_img"] ?? "",
+      );
 }
 
 class ContentBlogEntity {
@@ -84,4 +101,9 @@ class ContentBlogEntity {
   Map<String, dynamic> toJson() => {
         "rendered": rendered,
       };
+
+  factory ContentBlogEntity.fromJson(Map<String, dynamic> json) =>
+      ContentBlogEntity(
+        rendered: json["rendered"],
+      );
 }

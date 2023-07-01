@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/city_entity.dart';
 
 class CityDTO extends CityEntity {
   const CityDTO({

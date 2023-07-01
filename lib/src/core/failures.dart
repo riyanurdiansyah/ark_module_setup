@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
 
-abstract class Failure extends Equatable {
-  const Failure([List properties = const <dynamic>[]]) : super();
+abstract class Failures extends Equatable {
+  const Failures([List properties = const <dynamic>[]]) : super();
 }
 
 /*
@@ -9,7 +9,7 @@ abstract class Failure extends Equatable {
   jika terjadi error pada API
   atau status code yang tidak 200
 */
-class HttpFailure extends Failure {
+class HttpFailure extends Failures {
   final int code;
   final String message;
 

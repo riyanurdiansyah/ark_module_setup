@@ -1,6 +1,7 @@
 import 'dart:convert';
 
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/data/dto/instructor_my_course_dto.dart';
+import 'package:ark_module_setup/src/domain/entities/my_course_entity.dart';
 
 List<MyCourseDTO> myCourseEntityFromJson(String str) => List<MyCourseDTO>.from(
     json.decode(str).map((x) => MyCourseDTO.fromJson(x)));

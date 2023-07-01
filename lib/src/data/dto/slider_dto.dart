@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/slider_entity.dart';
 
 SliderDataDTO sliderEntityFromJson(String str) =>
     SliderDataDTO.fromJson(json.decode(str));

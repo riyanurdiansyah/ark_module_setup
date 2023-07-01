@@ -1,29 +1,30 @@
+
 import 'package:flutter/material.dart';
 
-class ButtonReusableWidget extends StatelessWidget {
+class ButtonReusableWidgets extends StatelessWidget {
   final bool isOutlinedButton;
   final VoidCallback onPressed;
-  final String? title;
-  final Widget? widget;
-  final double? width;
-  final double? height;
-  final MaterialStateProperty<OutlinedBorder>? shapeOutline;
-  final List<Color>? colorGradient;
-  final TextStyle? titleStyle;
-  final EdgeInsetsGeometry? padding;
-  final EdgeInsetsGeometry? margin;
-  final BorderRadiusGeometry? borderRadius;
-  final OutlinedBorder? shape;
-  final Color? backgroundColor;
-  final MaterialStateProperty<Color?>? backgroundColorOutline;
-  final MaterialStateProperty<EdgeInsetsGeometry?>? paddingOutline;
-  final MaterialStateProperty<Size?>? minimumSize;
-  final MaterialStateProperty<Size?>? maximumSize;
-  final MaterialStateProperty<Size?>? fixedSize;
-  final MaterialStateProperty<BorderSide?>? borderSide;
-  final Gradient? isGradient;
+  String? title;
+  Widget? widget;
+  double? width;
+  double? height;
+  MaterialStateProperty<OutlinedBorder>? shapeOutline;
+  List<Color>? colorGradient;
+  TextStyle? titleStyle;
+  EdgeInsetsGeometry? padding;
+  EdgeInsetsGeometry? margin;
+  BorderRadiusGeometry? borderRadius;
+  OutlinedBorder? shape;
+  Color? backgroundColor;
+  MaterialStateProperty<Color?>? backgroundColorOutline;
+  MaterialStateProperty<EdgeInsetsGeometry?>? paddingOutline;
+  MaterialStateProperty<Size?>? minimumSize;
+  MaterialStateProperty<Size?>? maximumSize;
+  MaterialStateProperty<Size?>? fixedSize;
+  MaterialStateProperty<BorderSide?>? borderSide;
+  Gradient? isGradient;
 
-  const ButtonReusableWidget({
+  ButtonReusableWidgets({
     Key? key,
     required this.isOutlinedButton,
     required this.onPressed,

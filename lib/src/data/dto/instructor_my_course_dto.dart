@@ -1,4 +1,4 @@
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/instructor_my_course_entity.dart';
 
 class InstructorMyCourseDTO extends InstructorMyCourseEntity {
   const InstructorMyCourseDTO({

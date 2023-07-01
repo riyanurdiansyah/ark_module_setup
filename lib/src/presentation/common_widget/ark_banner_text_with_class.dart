@@ -1,4 +1,6 @@
 import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/domain/entities/course_entity.dart';
+import 'package:ark_module_setup/src/presentation/common_widget/ark_class_card.dart';
 import 'package:ark_module_setup/utils/app_shimmer.dart';
 import 'package:ark_module_setup/utils/constants/constant_color.dart';
 import 'package:flutter/material.dart';

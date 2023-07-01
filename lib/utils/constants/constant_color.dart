@@ -10,12 +10,12 @@ const Color kBlack1 = Color.fromRGBO(28, 29, 32, 1);
 
 const Color kBlack2 = Color.fromRGBO(66, 66, 66, 1);
 
-///body text, component description
+///body text, component description (knewblack2a)
 const Color kBlack3 = Color.fromRGBO(62, 63, 67, 1);
 
 const Color kBlack4 = Color.fromRGBO(90, 92, 96, 1);
 
-///Inactive states of icons & other components
+///Inactive states of icons & other components (knewblack3)
 const Color kBlack5 = Color.fromRGBO(157, 160, 167, 1);
 
 ///Default texts in text field, disabled states of buttons, icons & other components
@@ -68,6 +68,7 @@ const Color kBlue4 = Color.fromRGBO(44, 149, 235, 1);
 
 const Color kBlue5 = Color.fromRGBO(87, 182, 240, 1);
 
+///kprimaryblue4
 const Color kBlue6 = Color.fromRGBO(155, 206, 247, 1);
 
 const Color kBlue7 = Color.fromRGBO(205, 230, 251, 1);

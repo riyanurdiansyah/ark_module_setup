@@ -1,5 +1,15 @@
 import 'package:flutter/cupertino.dart';
 
+import 'constants/constant_color.dart';
+
+TextStyle get subTitleStyle {
+  return const TextStyle(
+    fontSize: 12.5,
+    fontWeight: FontWeight.bold,
+    color: kBlack4,
+  );
+}
+
 class AppText {
   static labelNormal(
     String title,

@@ -1,6 +1,9 @@
 import 'dart:convert';
 
-import 'package:ark_module_setup/ark_module_setup.dart';
+import 'package:ark_module_setup/src/data/dto/daftar_loker_jrc_dto.dart';
+import 'package:ark_module_setup/src/data/dto/fasilitator_jrc_dto.dart';
+import 'package:ark_module_setup/src/data/dto/instruktur_jrc_dto.dart';
+import 'package:ark_module_setup/src/domain/entities/course_jrc_entity.dart';
 
 CourseJrcDTO courseJrcEntityFromJson(String str) =>
     CourseJrcDTO.fromJson(json.decode(str));
